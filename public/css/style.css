@@ -20,13 +20,19 @@ em,i {
     background: #fff;
 }
 header {
-    background: #ccc;
+    background: indianred;
 }
 header h1 {
     margin: 0;
 }
 #logo {
     padding: 20px;
+}
+#logo > span{
+    font-size: 40px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
 }
 #navigation {
     float: left;
@@ -106,4 +112,41 @@ footer {
     text-align: left;
     padding: 20px;
     height: 1%;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+#categories li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#container_produse{
+    display: flex;
+}
+
+#container_produse > .product {
+    border:1px dashed black;
+    border-radius: 15px;
+    padding:10px;
+    margin: 10px;
+    width:250px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.7);
 }
